@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/ic_launcher_background"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:textColor="#393535"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/warning_email"
+        app:layout_constraintEnd_toEndOf="@+id/textwarningusser"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/textwarningusser" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="User name"
+        android:includeFontPadding="true"
+        android:inputType="textPersonName"
+        android:shadowColor="#E91E63"
+        android:textColor="#2E2B2B"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textwarningusser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@color/purple_700"
+        android:text="Enter"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:includeFontPadding="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#673AB7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/waringpass"
+        app:layout_constraintEnd_toEndOf="@+id/warning_email"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="@+id/warning_email" />
+
+    <TextView
+        android:id="@+id/textwarningusser"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:textSize="14sp"
+        android:includeFontPadding="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextemail"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/warning_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:includeFontPadding="true"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toStartOf="@+id/asterickemail"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/waringpass"
+        android:layout_width="wrap_content"
+        android:includeFontPadding="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="TextView"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword" />
+
+    <TextView
+        android:id="@+id/star1"
+        android:layout_width="65dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="*"
+        android:includeFontPadding="true"
+        android:textColor="#F44336"
+        android:textColorHint="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/asterickemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743" />
+
+    <TextView
+        android:id="@+id/asterickemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="*"
+        android:includeFontPadding="true"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/asterickpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toEndOf="@+id/editTextemail" />
+
+    <TextView
+        android:id="@+id/asterickpass"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:includeFontPadding="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="352dp"
+        android:text="*"
+        android:textColor="#F44336"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="320dp"
+        android:includeFontPadding="true"
+        android:layout_marginRight="320dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:ellipsize="end"
+        android:text="I agree"
+        android:textColor="#673AB7"
+        android:textColorLink="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:useMaterialThemeColors="true" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

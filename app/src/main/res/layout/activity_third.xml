@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_gradient_color"
+    android:fitsSystemWindows="true"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/textview_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+
+        android:includeFontPadding="true"
+        android:text="What are you looking for today?"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_teen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_teen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/custombutton"
+        android:includeFontPadding="true"
+        android:text="Teenage Counseling(12-18)"
+        android:textSize="20sp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_young"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_young"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custombutton"
+        android:cursorVisible="true"
+        android:ellipsize="end"
+        android:scrollbarSize="5dp"
+        android:text="Young Counseling(19-25)"
+        android:textSize="20sp"
+        app:iconTint="#33ccff"
+        app:layout_constraintBottom_toTopOf="@+id/button_nursing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_nursing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/custombutton"
+        android:includeFontPadding="true"
+        android:text="Nursing Home Adults Counseling(60-100)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
